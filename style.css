@@ -1,0 +1,59 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+#main{
+    position: fixed;
+    top: 0;
+    left:-200px;
+    width: 200px;
+    height: 100%;
+    background: lightblue;
+    transition:left 500ms linear ;
+}
+#main.active{
+    left: 0px;
+}
+#main .link a{
+    display: block;
+    padding: 10px;
+    color: #fff ;
+    text-decoration: none ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #777;
+    margin: 18px;
+    padding: 15px;
+
+}
+#main #sidebar-toggle-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+}
+#main #sidebar-toggle-btn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 5px;
+    background: #16213E;
+
+}
+#main #sidebar-toggle-btn span:nth-child(1){
+    top: 10% ;
+}
+#main #sidebar-toggle-btn span:nth-child(3){
+    top: 90% ;
+}
+
+#main .link a:hover{
+    background-color: red;
+    color: #111;
+}
